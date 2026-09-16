@@ -3,6 +3,26 @@
 ![Python](https://img.shields.io/badge/python-%233670A0.svg?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Summary
-This automated cleanup report identifies items that have stalled in the withdrawn workflow. Specifically, it captures any item that has held a "withdrawn" status for more than 3 weeks, but whose icode2 has not yet been updated to 'w'.
+**What it does:** This automated clean-up report identifies items that have stalled in the withdrawn workflow. Specifically, it captures any item that has held a "withdrawn" status for more than 3 weeks, but whose icode2 has not yet been updated to 'w'.
+
+**Impact:** Automates on a schedule, a database clean-up task that generates and distributes a report that was previously a manual process.
+
+## Data Pipeline Architecture
+This repository showcases an automated data pipeline that generates, formats, and distributes Excel reports via Email. The automated process is fully productionized within a Windows environment.
+
+**Workflow Overview:**
+
+[Windows Task Scheduler] ──> [orchestrator.bat] ──> [main.py] ──> [Sub-modules & SQL] ──> [Report delivered to Email Inbox]
+
+**Repository Contents & Security Note:**
+
+To comply with data security policies, the core Python automation scripts have been omitted from this public repository. Instead, this repository provides:
+- The SQL Data-Extraction Script: The exact logic used to pull and aggregate Sierra ILS production data.
+- Manual Alternative: If you do not have an automated environment, you can run the provided SQL script manually in pgAdmin and export the results directly to a spreadsheet.
+
+## Acknowledgments
+The automated pipeline is built off the brilliant work of Gem Stone-Logan. For more information on implementing the automated system, please see her IUG presentations, [Automating Reports with Python.](https://www.gemstonelogan.com/presentations.html)
+
+
 
 
