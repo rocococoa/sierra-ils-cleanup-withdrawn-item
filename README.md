@@ -5,7 +5,7 @@
 ## Summary
 **What it does:** This automated clean-up report identifies items that have stalled in the withdrawn workflow. Specifically, it captures any item that has held a "withdrawn" status for more than 3 weeks, but whose icode2 has not yet been updated to 'w'.
 
-**Impact:** Automates on a schedule, a database clean-up task that generates and distributes a report that was previously a manual process.
+**Impact:** Maintains the accuracy and integrity of collection records within the Sierra ILS database. Scheduled and automated a database clean-up task to generate and distribute reports, replacing a previously manual process.
 
 ## Data Pipeline Architecture
 This repository features an automated data pipeline that generates, formats, and distributes Excel reports via email. The system integrates Windows Task Scheduler, a Batch script, SQL, and Python to handle the end-to-end workflow without manual intervention. The automated process is fully productionized within a Windows environment.
