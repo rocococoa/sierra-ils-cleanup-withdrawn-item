@@ -8,7 +8,7 @@
 **Impact:** Automates on a schedule, a database clean-up task that generates and distributes a report that was previously a manual process.
 
 ## Data Pipeline Architecture
-This repository showcases an automated data pipeline that generates, formats, and distributes Excel reports via Email. The automated process is fully productionized within a Windows environment.
+This repository features an automated data pipeline that generates, formats, and distributes Excel reports via email. The system integrates Windows Task Scheduler, a Batch script, SQL, and Python to handle the end-to-end workflow without manual intervention. The automated process is fully productionized within a Windows environment.
 
 **Workflow Overview:**
 
