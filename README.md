@@ -10,8 +10,12 @@
 ## Features and Deliverables
 
 **Automated Email:**
+
 <img width="968" height="652" alt="Withdrawn Item Check" src="https://github.com/user-attachments/assets/0eeb90e0-5f6c-4b57-bd41-a8e0567fa9c7" />
 
+**Attached Excel Report:**
+
+<img width="1061" height="742" alt="Withdrawn-Item-Check" src="https://github.com/user-attachments/assets/a107f76a-2b46-4dea-9c38-51f75151ac1d" />
 
 ## Data Pipeline Architecture
 This repository features an automated data pipeline that generates, formats, and distributes Excel reports via email. The system integrates Windows Task Scheduler, a Batch script, SQL, and Python to handle the end-to-end workflow without manual intervention. The automated process is fully productionized within a Windows environment.
